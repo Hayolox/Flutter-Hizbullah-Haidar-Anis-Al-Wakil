@@ -41,7 +41,7 @@
 3. Map List hampir sama dengan list biasanya, akan tetapi map list mempunyai tipe data key dan value mirip seperti index. apabila list 
    index dibikin secara otomatis dan nilainya secara auto increment. sedangkan map key bisa ditentukan dengan tipe data apapun. Untuk penulisan list dapat dilihat dibawah ini:
 
-  ###### a. Menampilkan Map list dengan menggunakan print
+    ###### a. Menampilkan Map list dengan menggunakan print
             ``` 
             var name = {
                 'first' : 'akil',
