@@ -1,1 +1,1 @@
-https://github.com/Hayolox/Basic_Version_and_Branch_Management
+https://github.com/Hayolox/Pratikum_Basic-Version-and-Branch-Management-Git/network
