@@ -5,13 +5,13 @@
 1. Fungsi atau function merupakan blok program yang dirancang untuk melaksanakan tugas tertentu atau struktur pengelompokan yang 
    mengandung sekelompok pernyataan yang akan dilaksanakan oleh CPU jika nama function tersebut dipanggil untuk dieksekusi, kecuali untuk function utama yaitu void main() yang akan dieksekusi secara otomatis. Untuk menuliskan function dapat dengan cara anonymous function (tidak ada nama function) dan name function (ada nama functionnya). Dapat dilihat contoh penulisan function dibawah ini:
 
-   ###### a. anonymous function
+   ###### a. Anonymous function
             ``` 
              var hellow = (){
                  print('hellow);
              }
             ```                
-   ###### b. name function
+   ###### b. Name function
             ``` 
              hellow(){
                  print('hellow);
