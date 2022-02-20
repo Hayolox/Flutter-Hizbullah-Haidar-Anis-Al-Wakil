@@ -33,8 +33,7 @@
             }
         }
       ```
-
-    3. Property atau field adalah data yang bisa disisipkan didalam object. Contoh:
+   3. Property atau field adalah data yang bisa disisipkan didalam object. Contoh:
 
         ```
         class Hewan{
