@@ -1,6 +1,6 @@
 void main() {
   int inputan = 30;
-  int faktorial = 1;
+  double faktorial = 1;
 
   if (inputan >= 30) {
     for (int a = 1; a <= inputan; a++) {
