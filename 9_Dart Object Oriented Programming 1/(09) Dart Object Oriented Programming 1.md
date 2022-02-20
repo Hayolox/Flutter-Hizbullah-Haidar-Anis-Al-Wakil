@@ -16,10 +16,10 @@
       }
       ```
 
-    2. Object
-       Object adalah hasil instansi dari class, untuk membuat object mirip dengan memanggil function tapi bedanya bukan nama function atau method tapi nama kelasnya. Contoh:
+   2. Object
+      Object adalah hasil instansi dari class, untuk membuat object mirip dengan memanggil function tapi bedanya bukan nama function atau method tapi nama kelasnya. Contoh:
 
-        ```
+      ```
         class Hewan{
             int namaHewan = ['anjing','ayam','buaya'];
             void jalan(){
@@ -32,11 +32,11 @@
                 print(hewan.jalan());
             }
         }
-         ```
+      ```
 
     3. Property atau field adalah data yang bisa disisipkan didalam object. Contoh:
 
-         ```
+       ```
         class Hewan{
             // variable namaHewan ini adalah Property atau field
             int namaHewan = ['anjing','ayam','buaya'];
