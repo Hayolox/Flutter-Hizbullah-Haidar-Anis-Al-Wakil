@@ -4,7 +4,7 @@
 
    OOP (Object Oriented Programming) adalah suatu metode pemrograman yang berorientasi kepada objek. Tujuan dari OOP adalah untuk mempermudah pengembangan dalam program dengan cara mengikuti model yang telah ada dalam dunia nyata. Didalam OOP dapat mennyusun dalam bentuk abstraksi object. Keuntungan OOP adalah mudah mencari error pada program dan mudah digunakan ulang dikarena setiap object memiliki kesamaan ciri2.
 
-   OOP memiliki beberapaka kompenen antara lain yaitu:
+   OOP memiliki beberapa kompenen antara lain yaitu:
 
    1. Class
       Class merupakan cetakan atau blueprint dari sebuah object yang memiliki ciri-ciri yang disebut property dan memiliki method atau function. Untuk menuliskan class dapat dibawah ini:
