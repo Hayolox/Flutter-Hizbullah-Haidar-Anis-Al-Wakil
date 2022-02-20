@@ -36,7 +36,7 @@
 
     3. Property atau field adalah data yang bisa disisipkan didalam object. Contoh:
 
-       ```
+        ```
         class Hewan{
             // variable namaHewan ini adalah Property atau field
             int namaHewan = ['anjing','ayam','buaya'];
@@ -52,4 +52,4 @@
                 print(hewan.namaHewan);
             }
         }
-         ```
+        ```
