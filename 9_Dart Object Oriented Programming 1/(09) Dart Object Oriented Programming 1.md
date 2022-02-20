@@ -42,8 +42,7 @@
             void jalan(){
                 print('${namaHewan.[0] berjalan menggunakan kaki yang berjumlah 4}');
             };
-
-            // contoh dapat dilihat dibawah ini
+            
             void main(){
                 var hewan = Hewan();
 
