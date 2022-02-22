@@ -59,7 +59,7 @@ Membuat rangkaian class yang sudah disediakan
 
 Berikut kode tugas kedua
 
-[tugas_1.dart](./praktikum/tugas1.dart)
+[tugas_1](./praktikum/tugas_1.dart)
 
 output:
 
@@ -76,7 +76,7 @@ Tugas kedua menambahkan method atau function totalMuatan
 
 Berikut kode tugas kedua.
 
-[tugas_2.dart](./praktikum/ListAndMap.dart)
+[tugas_2](./praktikum/tugas_2.dart)
 
 output:
 
