@@ -1,9 +1,15 @@
 
 
-## Advance Function - Async-Await
+## 7 Advance Function - Async-Await
 
-1. Fungsi atau function merupakan blok program yang dirancang untuk melaksanakan tugas tertentu atau struktur pengelompokan yang 
-   mengandung sekelompok pernyataan yang akan dilaksanakan oleh CPU jika nama function tersebut dipanggil untuk dieksekusi, kecuali untuk function utama yaitu void main() yang akan dieksekusi secara otomatis. Untuk menuliskan function dapat dengan cara anonymous function (tidak ada nama function) dan name function (ada nama functionnya). Dapat dilihat contoh penulisan function dibawah ini:
+Dalam materi ini, mempelajari:
+1. Function
+2. List
+3. Map List
+4. Async-Await
+
+### Function
+Fungsi atau function merupakan blok program yang dirancang untuk melaksanakan tugas tertentu atau struktur pengelompokan yang mengandung sekelompok pernyataan yang akan dilaksanakan oleh CPU jika nama function tersebut dipanggil untuk dieksekusi, kecuali untuk function utama yaitu void main() yang akan dieksekusi secara otomatis. Untuk menuliskan function dapat dengan cara anonymous function (tidak ada nama function) dan arrow function. Dapat dilihat contoh penulisan function dibawah ini:
 
    ###### a. Anonymous function
             ``` 
@@ -11,15 +17,12 @@
                  print('hellow);
              }
             ```                
-   ###### b. Name function
+   ###### b. Arrow function
             ``` 
-             hellow(){
-                 print('hellow);
-             }
+             var hellow () => print('hellow'); 
             ``` 
-
-2. List merupakan berisi kumpulan data yang mampu menyimpan beberapa nilai dalam satu variabel. Untuk penulisan list salah satunya 
-   sebagai  berikut :
+### List
+List merupakan berisi kumpulan data yang mampu menyimpan beberapa nilai dalam satu variabel. Untuk penulisan list salah satunya sebagai  berikut :
 
    ###### Penulisan list
             ``` 
@@ -37,9 +40,9 @@
                 print(list);
              }
             ```
-  
-3. Map List hampir sama dengan list biasanya, akan tetapi map list mempunyai tipe data key dan value mirip seperti index. apabila list 
-   index dibikin secara otomatis dan nilainya secara auto increment. sedangkan map key bisa ditentukan dengan tipe data apapun. Untuk penulisan list dapat dilihat dibawah ini:
+
+### Map List
+Map List hampir sama dengan list biasanya, akan tetapi map list mempunyai tipe data key dan value mirip seperti index. apabila list index dibikin secara otomatis dan nilainya secara auto increment. sedangkan map key bisa ditentukan dengan tipe data apapun. Untuk penulisan list dapat dilihat dibawah ini:
 
     ###### a. Menampilkan Map list dengan menggunakan print
             ``` 
@@ -51,3 +54,30 @@
             //untuk menampilkan map list
             print(name['first']);
             ```
+
+### Async-Await
+Berfungsi untuk menjalankan beberapa proses tanpa perlu menunggu.
+
+## Task
+
+### 1. Tugas Pertama
+Pada tugas pertama ini membuat function dengan menerima 2 parameter yaitu list dan pengali, melakukan perulangan pada list data secara Async, setiap perulangan, mengalikan antara elemnt list data dengan pengali
+
+Berikut kode rumus luas lingkaran.
+
+[function.dart](./praktikum/function.dart)
+
+output:
+
+![tugas1](./screenshots/tugas1.jpeg )
+
+### 2. Tugas Kedua
+Tugas selanjutnya adalah membuat list dengan spesifikasi setiap element berupa list, setiap element wajib terdiri dari 2 data sub dan membuat sebuah MAP dengan menggunakan list tersebut
+
+Berikut kode rumus luas lingkaran.
+
+[ListAndMap.dart](./praktikum/ListAndMap.dart)
+
+output:
+
+![tugas2](./screenshots/tugas2.jpeg )
