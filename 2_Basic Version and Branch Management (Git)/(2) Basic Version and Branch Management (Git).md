@@ -19,7 +19,6 @@
 ## Task
 
 ### 1. Membuat repo digithub dan implementasikan penggunaan branching 
+pada soal pertama dan kedua membuat repo dan  implementasikan penggunaan branching yang terdiri dari master, development, featureA dan featureB. Untuk penggunaan git dapat dilihat dibawah ini:
 
-    pada soal pertama dan kedua membuat repo dan  implementasikan penggunaan branching yang terdiri dari master, development, featureA dan featureB. Untuk penggunaan git dapat dilihat dibawah ini:
-
-    ![branch](./screenshots/branch.jpeg)
+![branch](./screenshots/branch.jpeg)
