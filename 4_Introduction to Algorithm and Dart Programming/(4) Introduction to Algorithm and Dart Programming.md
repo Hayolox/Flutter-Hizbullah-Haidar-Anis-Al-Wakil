@@ -69,7 +69,7 @@ Berikut kode rumus luas lingkaran.
 
 output:
 
-![LuasLingkaran](./screenshots/LuasLingkaran.jpg)
+![LuasLingkaran](./screenshots/LuasLingkaran.JPEG )
 
 ### 2. Membuat 3 buah variable yang berisi string dan digabungkan
 
@@ -79,6 +79,6 @@ Berikut kode membuat 3 variable dan digabungkan.
 
 output:
 
-![AddString](./screenshots/AddString.jpg)
+![AddString](./screenshots/AddString.JPEG )
 
 
