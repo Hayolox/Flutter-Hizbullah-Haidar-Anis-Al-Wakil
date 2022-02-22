@@ -36,7 +36,7 @@ Terdapat sebuah nilai jika nilai lebih dari 70 maka mengembalikan nilai A, jika 
 
 Berikut kode perkondisian nilai.
 
-[perkondisian.dart](./praktikum/perkondisian.dart)
+[if.dart](./praktikum/if.dart)
 
 outpus:
 
