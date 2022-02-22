@@ -29,3 +29,7 @@ implementasi git push, pull, stash dan merge dapat dilihat dibawah ini
 git push
 
 ![push](./screenshots/push.jpeg)
+
+git pull
+![pull](./screenshots/pull.jpeg)
+
