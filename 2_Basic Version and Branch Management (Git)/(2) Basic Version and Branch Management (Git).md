@@ -15,3 +15,9 @@
    6. git checkout berfungsi untuk merubah branch yang aktif ke branch yang dipilih, untuk penulisanya ```git checkout NamaBranch```
    7. git merge untuk menggabungkan branch, untuk penulisannya ```git merge NamaBranch```
    8. git clone berfungsi untuk membuat salinan repo lokal, untuk penulisannya ```git clone urlRepo```
+
+## Task
+
+### 1. Membuat repo digithub dan implementasikan penggunaan branching 
+    pada soal pertama dan kedua membuat repo dan  implementasikan penggunaan branching yang terdiri dari master, development, featureA dan featureB. Untuk penggunaan git dapat dilihat dibawah ini:
+    ![Create Branch](./screenshots/Create Branch.jpeg)
