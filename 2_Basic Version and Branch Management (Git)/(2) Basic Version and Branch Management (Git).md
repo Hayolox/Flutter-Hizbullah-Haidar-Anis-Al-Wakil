@@ -22,3 +22,10 @@
 pada soal pertama dan kedua membuat repo dan  implementasikan penggunaan branching yang terdiri dari master, development, featureA dan featureB. Untuk penggunaan git dapat dilihat dibawah ini:
 
 ![branch](./screenshots/branch.jpeg)
+
+### 2. Implementasikan git push, pull, stash dan merge
+implementasi git push, pull, stash dan merge dapat dilihat dibawah ini
+
+git push
+
+![push](./screenshots/push.jpeg)
