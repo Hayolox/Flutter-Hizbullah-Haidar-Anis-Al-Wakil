@@ -38,3 +38,10 @@ git stash
 git merge
 ![merge](./screenshots/merge.jpeg)
 
+### 2. Implementasikan conflic
+Untuk mengemplementasikan conflic maka harus melakukan perubahan yang berbeda pada branch featureA dan develepoment, dapat dilihat conflic dibawah ini:
+
+![conflic](./screenshots/conflic.jpeg)
+
+
+
