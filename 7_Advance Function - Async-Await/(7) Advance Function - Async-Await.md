@@ -63,7 +63,7 @@ Berfungsi untuk menjalankan beberapa proses tanpa perlu menunggu.
 ### 1. Tugas Pertama
 Pada tugas pertama ini membuat function dengan menerima 2 parameter yaitu list dan pengali, melakukan perulangan pada list data secara Async, setiap perulangan, mengalikan antara elemnt list data dengan pengali
 
-Berikut kode rumus luas lingkaran.
+Berikut kode tugas 1.
 
 [function.dart](./praktikum/function.dart)
 
@@ -74,7 +74,7 @@ output:
 ### 2. Tugas Kedua
 Tugas selanjutnya adalah membuat list dengan spesifikasi setiap element berupa list, setiap element wajib terdiri dari 2 data sub dan membuat sebuah MAP dengan menggunakan list tersebut
 
-Berikut kode rumus luas lingkaran.
+Berikut kode tugas 2.
 
 [ListAndMap.dart](./praktikum/ListAndMap.dart)
 
