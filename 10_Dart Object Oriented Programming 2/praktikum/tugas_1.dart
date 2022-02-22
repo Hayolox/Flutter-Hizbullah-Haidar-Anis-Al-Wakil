@@ -23,13 +23,13 @@ class Kubus extends BangungRuang {
 }
 
 class Balok extends BangungRuang {
-  void hitungBalok() {
-    double hasil = panjang * lebar * tinggi;
+  // void hitungBalok() {
+  //   double hasil = panjang * lebar * tinggi;
 
-    print('---------Balok----------');
-    print('');
-    print(hasil);
-  }
+  //   print('---------Balok----------');
+  //   print('');
+  //   print(hasil);
+  // }
 }
 
 void main() {
@@ -37,8 +37,8 @@ void main() {
   var getKubus = Kubus();
   getKubus.hitungKubus(4);
 
-  @override
-  var getBalok = Balok();
-  getBalok.volume(3, 3, 3);
-  getBalok.hitungBalok();
+  // @override
+  // var getBalok = Balok();
+  // getBalok.volume(3, 3, 3);
+  // getBalok.hitungBalok();
 }
