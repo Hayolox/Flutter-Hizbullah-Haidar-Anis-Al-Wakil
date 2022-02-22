@@ -63,8 +63,6 @@ Berikut kode tugas kedua
 
 output:
 
-
-class hewan
 ![Tugas1_Class_Hewan](./screenshots/Tugas1_Class_Hewan.jpeg)
 
 Mobil kurang dari kapasitas
