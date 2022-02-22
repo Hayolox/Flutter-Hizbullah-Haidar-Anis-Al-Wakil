@@ -41,3 +41,13 @@ Berikut kode perkondisian nilai.
 outpus:
 
 ![perkondisian.jpeg](./screenshots/perkondisian.jpeg)
+
+### 2 Faktorial
+
+Berikut kode Faktorial
+
+[faktorial.dart](./praktikum/faktorial.dart)
+
+outpus:
+
+![faktorial.jpeg](./screenshots/faktorial.jpeg)
