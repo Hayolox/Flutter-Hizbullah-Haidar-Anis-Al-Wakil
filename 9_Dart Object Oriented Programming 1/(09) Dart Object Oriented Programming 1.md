@@ -51,3 +51,34 @@
             }
         }
         ```
+
+## Task
+
+### 1. Tugas Pertama
+Membuat rangkaian class yang sudah disediakan
+
+Berikut kode tugas kedua
+
+[tugas1.dart](./praktikum/tugas1.dart)
+
+output:
+
+class hewan
+![Tugas1_Class_Hewan](./screenshots/Tugas1_Class_Hewan.jpeg)
+
+Mobil kurang dari kapasitas
+![Tugas1_Class_Mobil_Kurang_Dari_Kapasistas](./screenshots/Tugas1_Class_Mobil_Kurang_Dari_Kapasistas.jpeg)
+
+Mobil lebih atau sama dengan dari kapasitas
+![Tugas1_Class_Mobil_Lebih_Dari_atau_sama_dengan_Kapasistas](./Tugas1_Class_Mobil_Lebih_Dari_atau_sama_dengan_Kapasistas.jpeg)
+
+### 2. Tugas Kedua
+Tugas kedua menambahkan method atau function totalMuatan
+
+Berikut kode tugas kedua.
+
+[tugas2.dart](./praktikum/ListAndMap.dart)
+
+output:
+
+![Tugas2_Class_Mobil_Total Muatan](./screenshots/Tugas2_Class_Mobil_Total Muatan.jpeg )
