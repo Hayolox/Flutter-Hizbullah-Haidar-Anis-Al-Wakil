@@ -43,7 +43,7 @@ Untuk mengemplementasikan conflic maka harus melakukan perubahan yang berbeda pa
 
 ![conflic](./screenshots/conflic.jpeg)
 
-### 4. Network atau hasik
+### 4. Network atau hasil
 
 ![fastforward](./screenshots/fastforward.jpeg)
 
