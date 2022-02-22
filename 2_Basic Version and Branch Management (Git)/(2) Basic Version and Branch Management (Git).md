@@ -1,4 +1,4 @@
-## Basic Version and Branch Management (Git)
+## 2 Basic Version and Branch Management (Git)
 
    GitHub adalah  aplikasi berbasis web dengan sistem kontrol yang menyediakan layanan penyimpanan repository gratis dan git merupakan version control yang dapat berkolaborasi dengan berbagai developer dan  bertugas untuk mencatat perubahan seluruh file atau repository suatu project adapun Version control system (VCS) merupakan sebuah deretan software yg telah terintegrasi & dipakai buat membantu perangkat lunak engineer mengelola perubahan pada source code berdasarkan waktu ke waktu.
 
@@ -38,10 +38,15 @@ git stash
 git merge
 ![merge](./screenshots/merge.jpeg)
 
-### 2. Implementasikan conflic
+### 3. Implementasikan conflic
 Untuk mengemplementasikan conflic maka harus melakukan perubahan yang berbeda pada branch featureA dan develepoment, dapat dilihat conflic dibawah ini:
 
 ![conflic](./screenshots/conflic.jpeg)
+
+### 4. Network atau hasik
+
+![fastforward](./screenshots/fastforward.jpeg)
+
 
 
 
