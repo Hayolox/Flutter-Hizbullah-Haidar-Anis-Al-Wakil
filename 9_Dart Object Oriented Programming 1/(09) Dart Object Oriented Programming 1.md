@@ -63,6 +63,7 @@ Berikut kode tugas kedua
 
 output:
 
+
 class hewan
 ![Tugas1_Class_Hewan](./screenshots/Tugas1_Class_Hewan.jpeg)
 
@@ -81,4 +82,4 @@ Berikut kode tugas kedua.
 
 output:
 
-![Tugas2_Class_Mobil_Total Muatan](./screenshots/Tugas2_Class_Mobil_Total Muatan.jpeg )
+![Tugas2_Class_Mobil_Total_Muatan](./screenshots/Tugas2_Class_Mobil_Total_Muatan.jpeg )
