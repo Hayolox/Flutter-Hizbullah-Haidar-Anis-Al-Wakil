@@ -39,4 +39,5 @@ Berikut kode perkondisian nilai.
 [perkondisian.dart](./praktikum/perkondisian.dart)
 
 outpus:
-[perkondisian.jpeg](./screenshots/perkondisian.jpeg)
+
+![perkondisian.jpeg](./screenshots/perkondisian.jpeg)
