@@ -27,9 +27,14 @@ pada soal pertama dan kedua membuat repo dan  implementasikan penggunaan branchi
 implementasi git push, pull, stash dan merge dapat dilihat dibawah ini
 
 git push
-
 ![push](./screenshots/push.jpeg)
 
 git pull
 ![pull](./screenshots/pull.jpeg)
+
+git stash
+![pull](./screenshots/stash.jpeg)
+
+git merge
+![merge](./screenshots/merge.jpeg)
 
