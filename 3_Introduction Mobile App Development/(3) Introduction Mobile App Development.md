@@ -12,3 +12,11 @@ Sofware adalah perangkat lunak yang tersimpan dan dapat dikendalikan pada sistem
 
 3.	Android
     Berjalan pada perangkat smart phone yang umumnya dilakukan tahap instalasi bisa melalui store penyedia aplikasi. Bisa digunakan menggunakan internet ataupun tidak. 
+
+## Task
+###  Tugas Pratikum yang terdiri dari 2 soal
+Pada soal pertama menyebutkan bahasa pemograman apa saja untuk membuat aplikasi mobile dan pada soal kedua menyebutkan 5 aplikasi android yang tidak ada di iphone begitupun sebaliknya.
+
+Berikut Jawabannya
+
+[tugas.text](./praktikum/tugas.text)
