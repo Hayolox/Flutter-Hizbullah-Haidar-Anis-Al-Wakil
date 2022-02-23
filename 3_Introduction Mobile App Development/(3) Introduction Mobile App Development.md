@@ -17,6 +17,6 @@ Sofware adalah perangkat lunak yang tersimpan dan dapat dikendalikan pada sistem
 ###  Tugas Pratikum yang terdiri dari 2 soal
 Pada soal pertama menyebutkan bahasa pemograman apa saja untuk membuat aplikasi mobile dan pada soal kedua menyebutkan 5 aplikasi android yang tidak ada di iphone begitupun sebaliknya.
 
-Berikut Jawabannya
+Berikut link google docsnya:
 
-[tugas.text](./praktikum/tugas.text)
+https://bit.ly/3Hcc8qi
