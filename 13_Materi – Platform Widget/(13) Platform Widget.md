@@ -35,7 +35,7 @@ Tugas selanjutnya adalah clone WA yang dimana tampilanya menggunakan flutter Cup
 
 Berikut kode main.dart.
 
-[main.dart](./praktikum/cupertino/lib/main.dart
+[main.dart](./praktikum/cupertino/lib/main.dart)
 
 berikut code image yang menggunakan Cupertino search textfield
 
