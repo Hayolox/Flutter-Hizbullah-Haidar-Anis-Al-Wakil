@@ -3,8 +3,8 @@ class Matematika {
 }
 
 class KelipatanPersekutuanTerkecil implements Matematika {
-  int x = 6;
-  int y = 9;
+  int x = 2;
+  int y = 6;
 
   void hasil() {
     if (x < y) {
@@ -18,9 +18,9 @@ class KelipatanPersekutuanTerkecil implements Matematika {
   }
 }
 
-class FaktorPeseketuanTerbesar {
-  int x = 6;
-  int y = 9;
+class FaktorPeseketuanTerbesar implements Matematika {
+  int x = 8;
+  int y = 18;
 
   void hasil() {
     if (x < y) {
