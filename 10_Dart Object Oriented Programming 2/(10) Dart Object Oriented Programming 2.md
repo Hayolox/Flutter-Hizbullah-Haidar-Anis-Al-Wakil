@@ -21,7 +21,7 @@
       ```
 
    2. Inheritance
-      Merupakan pewarisan, jadi class baru mmemiliki semua yang dimiliki oleh class yang di extends,contoh
+      Merupakan pewarisan, jadi class baru memiliki semua yang dimiliki oleh class yang di extends,contoh
 
       ```
         void main() { 
@@ -42,7 +42,7 @@
       ```
 
    3. Interface
-      Interface yang saya pahami simplenya adalah kontrak yang ada di class, jad apabila class a ingin implement dengan class b maka class a harus mengikuti isi yang ada dikelas b atau bisaa dibilang kontrak.
+      yang saya pahami simplenya adalah kontrak yang ada di class, jad apabila class a ingin implement dengan class b maka class a harus mengikuti isi yang ada dikelas b atau bisaa dibilang kontrak.
 
         ```
         class Menghitung {
