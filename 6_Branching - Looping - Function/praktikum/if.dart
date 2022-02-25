@@ -1,15 +1,18 @@
-void main() {
-  //Membuat variable nilai atau bisa dibilang inputan
-  double nilai = 71;
-
+String Kondisi(int nilai) {
+  late String hasil;
   //Kondisi nilai
   if (nilai > 70) {
-    print('A');
+    hasil = 'A';
   } else if (nilai > 40) {
-    print('B');
+    hasil = 'B';
   } else if (nilai > 0) {
-    print('C');
+    hasil = 'C';
   } else {
     print('');
   }
+  return hasil;
+}
+
+void main() {
+  print(Kondisi(78));
 }

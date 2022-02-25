@@ -1,8 +1,10 @@
 class BangungRuang {
+  // Variable global yang dimana masih belum mememiliki nilai
   late double panjang;
   late double lebar;
   late double tinggi;
 
+  //Function volume yang dimana variable global sudah memiliki nilai
   void volume(double paramPanjang, double paramLebar, double paramTinggi) {
     panjang = paramPanjang;
     lebar = paramLebar;
@@ -10,6 +12,7 @@ class BangungRuang {
   }
 }
 
+//Function kubus, disini rumus untuk menghitung kubus
 class Kubus extends BangungRuang {
   double sisi = 0;
 
@@ -22,6 +25,7 @@ class Kubus extends BangungRuang {
   }
 }
 
+//Fucntion balok yang dimana pada function ini berisi rumus perhitungan kubus
 class Balok extends BangungRuang {
   // void hitungBalok() {
   //   double hasil = panjang * lebar * tinggi;
