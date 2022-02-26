@@ -19,6 +19,8 @@ Verti digunakan untuk meletakkan Widget secara vertikal. Sedangkan untuk crossax
 Lisview merupakan mengatur widget dalam bentuk list yang dimana biasanya widget ini digunakan apabila widget body overflow 
 *Gridview
 Widget ini memungkinkan  untuk membuat daftar dengan satu atau lebih pohon widget  di setiap baris, jumlah widget yang ditampilkan dapat disesuaikan sesuai  kebutuhan.
+*Stack
+Stack digunakan untuk menampilkan beberapa lapis widget.
 
 
 ## Task
