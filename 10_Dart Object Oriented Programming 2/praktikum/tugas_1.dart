@@ -37,7 +37,6 @@ class Balok extends BangungRuang {
 }
 
 void main() {
-  @override
   var getKubus = Kubus();
   getKubus.hitungKubus(4);
 
