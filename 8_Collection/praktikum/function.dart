@@ -1,13 +1,15 @@
-void section7(List<int> listData, int nilai) async {
-  for (int i = 0; i < listData.length; i++) {
-    await Future.delayed(Duration(seconds: 1), () {
-      int hasil = listData[i] * nilai;
-      print(hasil);
+Future<List> section7(List LisData, int nilai) async {
+  List listBaru = [];
+  await Future.delayed(Duration(seconds: 3), () {
+    LisData.forEach((element) {
+      var hasil = element * nilai;
+      listBaru.add(hasil);
     });
-  }
+  });
+  return listBaru;
 }
 
-void main() {
-  List<int> dataPerkalian = [1, 2, 3, 4];
-  section7(dataPerkalian, 3);
+void main() async {
+  List dataPerkalian = [1, 2, 3, 4];
+  print(await section7(dataPerkalian, 3));
 }
