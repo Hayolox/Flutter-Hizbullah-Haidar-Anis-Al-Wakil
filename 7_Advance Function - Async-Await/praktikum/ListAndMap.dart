@@ -1,21 +1,22 @@
 void main() {
   // List hewan yang berisi nama-nama hesan
-  var hewan = [
+  var name = [
     [
-      'anjing',
-      'ayam',
+      'akil',
+      12,
     ],
-    ['semut', 'ular'],
+    ['udin', 14],
+    ['ucup', 14],
   ];
 
 // Map nameHewan yang isi key tersebut dari list
-  var nameHewan = {
-    'NameHewan': hewan,
-  };
+  var mapName = {};
 
-  for (var i in nameHewan['NameHewan']!) {
-    for (var j in i) {
-      print(j);
+  for (var i in name) {
+    for (var p in i) {
+      mapName[i[0]] = p;
     }
   }
+
+  print(mapName);
 }
