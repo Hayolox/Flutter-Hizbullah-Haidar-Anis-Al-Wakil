@@ -66,7 +66,7 @@ output:
 Mobil kurang dari kapasitas
 ![Tugas1_Class_Mobil_Kurang_Dari_Kapasistas](./screenshots/Tugas1_Class_Mobil_Kurang_Dari_Kapasistas.jpeg)
 
-Mobil lebih atau sama dengan dari kapasitas
+Mobil lebih  dari kapasitas
 ![Tugas1_Class_Mobil_Lebih_Kapasitas](./screenshots/Tugas1_Class_Mobil_Lebih_Kapasitas.jpeg)
 
 ### 2. Tugas Kedua
