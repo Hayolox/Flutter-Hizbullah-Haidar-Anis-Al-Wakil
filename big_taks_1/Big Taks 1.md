@@ -1,0 +1,52 @@
+
+
+## Big taks 1
+
+
+### 1. Problem Satu
+Membuat sebuah fungsi yang dimana menerima sebuah angka yang meretrunkan true apabila angka genap dan retrunkan false apabila angka ganjil
+
+Berikut kode tugas problem pertama.
+
+[problem_1.dart](./codingan/problem_1.dart)
+
+output badges:
+
+![Problem 1](./screenshots/problem_1.jpeg )
+
+
+### 2. Problem Dua
+Pada problem kedua ini menerima sebuah angka yang kondisinya jika masukan lebih dari 180 maka masukan dikurangi dengan 180, jika kurang masukan kurang dari 180 maka masukan + 180, apabila kurang dari atau sama dengan 0 maka retrun 0 dan jika return lebih dari atau sama dengan 360 maka return 0.
+
+Berikut kode problem 2.
+
+[problem_2.dart](./codingan/problem_2.dart)
+
+output:
+
+![problem 2](./screenshots/problem_2.jpeg)
+
+### 2. Problem Tiga
+Pada problem kedua ini membuat jam pasir sesuai inputan
+
+Berikut kode problem 3.
+
+[problem_3.dart](./codingan/problem_3.dart)
+
+output:
+
+![problem 3](./screenshots/problem_3.jpeg)
+
+
+
+### 4. Problem Empat
+Pada problem keempat ini menerima angka dan menampilkan sebuah diagonal
+
+Berikut kode problem 3.
+
+[problem_4.dart](./codingan/problem_4.dart)
+
+output:
+
+![problem_4.dart](./screenshots/problem_4.jpeg)
+
