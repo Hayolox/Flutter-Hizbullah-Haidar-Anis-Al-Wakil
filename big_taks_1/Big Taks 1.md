@@ -18,18 +18,18 @@ output badges:
 
 
 ### 2. Problem Dua
-Pada problem kedua ini menerima sebuah angka yang kondisinya jika masukan lebih dari 180 maka masukan dikurangi dengan 180, jika kurang masukan kurang dari 180 maka masukan + 180, apabila kurang dari atau sama dengan 0 maka retrun 0 dan jika return lebih dari atau sama dengan 360 maka return 0.
+Pada problem kedua ini menerima sebuah angka yang kondisinya jika masukan lebih dari 180 maka masukan dikurangi dengan 180, jika kurang masukan kurang dari 180 maka masukan + 180,dan apabila return melebihi 360 atau kurang dari sama dengan 0 maka return 0
 
 Berikut kode problem 2.
 
 [problem_2.dart](./codingan/problem_2.dart)
 
-Untuk problem dua ini saya menggunakan 3 dengan menggunakan if dan if else
+Untuk problem dua ini saya menggunakan if else untuk menetukan kondisi seperti yang diminta
 output:
 
 ![problem 2](./screenshots/problem_2.jpeg)
 
-### 2. Problem Tiga
+### 3. Problem Tiga
 Pada problem kedua ini membuat jam pasir sesuai inputan
 
 Berikut kode problem 3.
