@@ -1,19 +1,21 @@
-import 'dart:io';
-
 int problem2(int masukan) {
-  if (masukan <= 0 || masukan == 180 || masukan >= 360) {
-    return 0;
-  } else if (masukan < 180) {
-    return masukan + 180;
-  } else if (masukan > 180) {
-    return masukan - 180;
+  late var hasil;
+  if (masukan >= 180) {
+    hasil = masukan - 180;
+  } else {
+    hasil = masukan + 180;
   }
-  return 0;
+  if (hasil >= 360 || hasil <= 0) {
+    hasil = 0;
+  }
+  return hasil;
 }
 
 void main() {
-  stdout.write("Enter a number ");
-  var number = stdin.readLineSync()!;
-  var masukan = int.parse(number);
-  print(problem2(masukan));
+  print(problem2(120));
+  print(problem2(200));
+  print(problem2(180));
+  print(problem2(-1));
+  print(problem2(360));
+  print(problem2(540));
 }
