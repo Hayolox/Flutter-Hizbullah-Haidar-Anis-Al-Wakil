@@ -64,7 +64,10 @@ void soal9() {
 }
 
 void soal10() {
-  print('///');
+  print('final untuk variable Text');
+  print('consst untuk variable topping');
+  print('var untuk variable favorite');
+  print('String untuk variable NewText');
 }
 
 void soal11() {
