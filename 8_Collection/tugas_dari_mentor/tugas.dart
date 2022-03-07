@@ -96,8 +96,37 @@ void soal15() {
   print('2, 0, 8, 5, 0');
 }
 
-void soal16() {
-  print('kosong');
+void soal16(double input1, double input2, int operator) {
+  late var hasil;
+  switch (operator) {
+    case 1:
+      hasil = input1 + input2;
+      print(hasil);
+      break;
+    case 2:
+      {
+        hasil = input1 * input2;
+        print(hasil);
+      }
+      break;
+    case 3:
+      {
+        hasil = input1 - input2;
+        print(hasil);
+      }
+      break;
+    case 4:
+      {
+        hasil = input1 % input2;
+        print(hasil);
+      }
+      break;
+    default:
+      {
+        print('tidak ada pilihan');
+      }
+      break;
+  }
 }
 
 void soal17() {
@@ -233,4 +262,18 @@ void main() {
   // var angka = int.parse(number);
   // print(soal14(angka));
   soal28();
+
+  stdout.write("Input pertama ");
+  var number = stdin.readLineSync()!;
+  var input1 = double.parse(number);
+
+  stdout.write("Input kedua ");
+  var number2 = stdin.readLineSync()!;
+  var input2 = double.parse(number2);
+
+  stdout.write("Pilih Operator ");
+  var operator = stdin.readLineSync()!;
+  var operator1 = int.parse(operator);
+
+  soal16(input1, input2, operator1);
 }
