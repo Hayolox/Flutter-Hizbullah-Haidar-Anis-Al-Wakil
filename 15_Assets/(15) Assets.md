@@ -17,30 +17,20 @@ Di flutter mendukung format gambar seperti JPEG, WebP, GIF, Animated Web/Gif, PN
 Penggunaan font pada flutter bisa menggunakan costum font atau dari package. Untuk menggunakan costum font maka buat folder font dan download font yang diinginkan pada google font setelah itu file tff pindahkan kefolder font dan tambah lokasi font pada pubspec.yaml
 
 
-<!-- ## Task
+## Task
 
-### 1. Tugas pertama
-Pada tugas pertama ini diperintahkan untuk mengimplementasikan lisview dan mengikuti desain yang sudah ditentukan
+### Tugas pertama dan kedua
+Pada tugas pertama minimum membuat 3 gambar dari internet menggunakan grid view dan pada tugas keduanya apabila gambar ditekan maka akan terbuka halaman baru yang menampilkan gambar yang ditekan dan gambar memenuhi gambar
 
-Berikut kode tugas pertama.
+Pada tugas ini saya menggabungkan 2 tugas tersebut kedalam 1 file project yang dimana menurut saya tugas pertama dan kedua itu saling berhubungan.
 
-[main.dart](./praktikum//ListView/lib/main.dart)
+[main.dart](./praktikum/tugas_one/lib/main.dart)
 
 output badges:
 
-![Lisview](./screenshots/ListView.jpeg )
+![Videos](./videos/output.mkv )
 
 
-### 2. Tugas kedua 
-Pada tugas kedua ini diperintahkan untuk mengimplementasikan GridView dan mengikuti dedain yang sudah ditentukan
-
-Berikut kode main.dart.
-
-[main.dart](./praktikum/GridView/lib/main.dart)
-
-output:
-
-![QRCODE](./screenshots//GridView.jpeg) -->
 
 
 
