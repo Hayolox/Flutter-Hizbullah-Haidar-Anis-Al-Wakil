@@ -6,24 +6,24 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  List data = [
-    'https://picsum.photos/seed/picsum/200/100',
-    'https://picsum.photos/id/237/200/100'
+  List listImage = [
+    'https://picsum.photos/seed/picsum/1000/1000',
+    'https://picsum.photos/id/237/1000/1000',
+    'https://picsum.photos/200/300?grayscale',
+    'https://picsum.photos/200/300?random=1',
+    'https://picsum.photos/200/300?random=1',
+    'https://picsum.photos/200/300?random=2',
   ];
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Taks 15 | Hizbullah A A'),
-          centerTitle: true,
-        ),
-        body: Home(data: [
-          'https://picsum.photos/seed/picsum/1000/1000',
-          'https://picsum.photos/id/237/1000/1000'
-        ]),
-      ),
+          appBar: AppBar(
+            title: Text('Taks 15 | Hizbullah A A'),
+            centerTitle: true,
+          ),
+          body: Home(data: listImage)),
     );
   }
 }

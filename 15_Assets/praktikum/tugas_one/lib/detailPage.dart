@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatelessWidget {
-  late String dataDetail = '';
+  late String dataDetail;
   DetailPage(this.dataDetail);
   @override
   Widget build(BuildContext context) {
