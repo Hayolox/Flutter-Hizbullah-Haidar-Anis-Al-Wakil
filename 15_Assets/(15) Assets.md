@@ -28,7 +28,7 @@ Pada tugas ini saya menggabungkan 2 tugas tersebut kedalam 1 file project yang d
 
 output badges:
 
-                                                       ![Videos](./gift/output.gif)
+![Videos](./gift/output.gif)
 
 
 
