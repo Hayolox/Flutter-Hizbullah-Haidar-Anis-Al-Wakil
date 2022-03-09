@@ -64,10 +64,10 @@ Berikut kode tugas kedua
 output:
 
 Mobil lebih kurang kapasitas
-![Tugas1_Class_Mobil_Kurang_Dari_Kapasistas](./screenshots/Tugas1_Class_Mobil_Kurang_Dari_Kapasistas.jpeg)
+![Tugas1_Class_Mobil_Kurang_Dari_Kapasistas](./screenshots/Tugas1_Class_Mobil_Kurang_Dari_Kapasistas.png.jpeg)
 
 Mobil lebih  dari kapasitas
-![Tugas1_Class_Mobil_Lebih_Kapasitas](./screenshots/Tugas1_Class_Mobil_Lebih_Kapasitas.jpeg)
+![Tugas1_Class_Mobil_Lebih_Kapasitas](./screenshots/Tugas1_Class_Mobil_Lebih_Kapasitas.png)
 
 ### 2. Tugas Kedua
 Tugas kedua menambahkan method atau function totalMuatan
@@ -78,4 +78,4 @@ Berikut kode tugas kedua.
 
 output:
 
-![Tugas2_Class_Mobil_Total_Muatan](./screenshots/Tugas2.jpeg )
+![Tugas2_Class_Mobil_Total_Muatan](./screenshots/Tugas2.png )
