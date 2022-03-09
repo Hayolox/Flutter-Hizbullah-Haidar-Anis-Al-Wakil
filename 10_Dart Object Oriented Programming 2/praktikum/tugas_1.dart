@@ -20,7 +20,7 @@ class Kubus extends BangungRuang {
     sisi = paramSisis;
     var hasil = sisi * sisi * sisi;
     print('---------Kubus----------');
-    print('');
+
     print(hasil);
   }
 }
@@ -30,6 +30,8 @@ class Balok extends BangungRuang {
   @override
   void volume(double paramPanjang, double paramLebar, double paramTinggi) {
     double hasil = paramPanjang * paramLebar * paramTinggi;
+    print('---------Balok----------');
+
     print(hasil);
   }
 }
@@ -40,9 +42,4 @@ void main() {
 
   var getBalok = Balok();
   getBalok.volume(3, 4, 5);
-
-  // @override
-  // var getBalok = Balok();
-  // getBalok.volume(3, 3, 3);
-  // getBalok.hitungBalok();
 }
