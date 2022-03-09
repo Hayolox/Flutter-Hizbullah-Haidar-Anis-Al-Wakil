@@ -27,18 +27,19 @@ class Kubus extends BangungRuang {
 
 //Fucntion balok yang dimana pada function ini berisi rumus perhitungan kubus
 class Balok extends BangungRuang {
-  // void hitungBalok() {
-  //   double hasil = panjang * lebar * tinggi;
-
-  //   print('---------Balok----------');
-  //   print('');
-  //   print(hasil);
-  // }
+  @override
+  void volume(double paramPanjang, double paramLebar, double paramTinggi) {
+    double hasil = paramPanjang * paramLebar * paramTinggi;
+    print(hasil);
+  }
 }
 
 void main() {
   var getKubus = Kubus();
   getKubus.hitungKubus(4);
+
+  var getBalok = Balok();
+  getBalok.volume(3, 4, 5);
 
   // @override
   // var getBalok = Balok();
