@@ -1,66 +1,43 @@
-class hewan {
-  String nameAnimal;
-  int weightAnimal;
+class Hewan {
+  int berat;
 
-  hewan.babi(this.nameAnimal, this.weightAnimal);
+  Hewan.berat(this.berat);
 }
 
-class mobil {
-  var dataHewan = [];
-  int kapasitas;
+class Mobil {
+  double kapasistas;
+  List<Hewan> muatan;
 
-  mobil(this.dataHewan, this.kapasitas);
-
+  Mobil(this.kapasistas, this.muatan);
   void tambahMuatan() {
-    int total = 0;
-    for (var i in dataHewan) {
-      total = i[1] + total;
+    double totalMuatan = 0;
+    for (var i in muatan) {
+      totalMuatan = totalMuatan + i.berat;
     }
-    if (total < kapasitas) {
-      while (total < kapasitas) {
-        var addData = ['Kucing', 43];
-        var toString = addData[1].toString();
-        int newweightAnimal = int.parse(toString);
-        total = total + newweightAnimal;
-        dataHewan.add([addData]);
-        if (total > kapasitas) {
+
+    if (totalMuatan < kapasistas) {
+      while (totalMuatan < kapasistas) {
+        var newAnimal = Hewan.berat(100);
+        muatan.add(newAnimal);
+        print('Tambah data');
+        totalMuatan = totalMuatan + newAnimal.berat;
+        print(totalMuatan);
+        if (totalMuatan > kapasistas) {
           break;
         }
-        print('Menambahkan  data hewan ');
-        print(total);
-        print(dataHewan);
       }
     } else {
-      print('MUATAN PENUH!!!!');
-      print(
-          'total kapasitas mobil maksimal 1000 kg. total berat kapasitas sekarang $total');
+      print('Kapasistas penuh');
     }
   }
 }
 
-void test() {
-  var hewan1 = hewan.babi('ayam', 500);
-  var hewan2 = hewan.babi('babi', 300);
-  var hewan3 = hewan.babi('anjing', 300);
+void main(List<String> args) {
+  var hewan1 = Hewan.berat(100);
+  var hewan2 = Hewan.berat(200);
+  var hewan3 = Hewan.berat(900);
 
-  var mobilUtama = mobil([
-    [
-      hewan1.nameAnimal,
-      hewan1.weightAnimal,
-    ],
-    [
-      hewan2.nameAnimal,
-      hewan2.weightAnimal,
-    ],
-    [
-      hewan3.nameAnimal,
-      hewan3.weightAnimal,
-    ],
-  ], 1000);
+  var mobilUtama = Mobil(1000, [hewan1, hewan2, hewan3]);
 
   mobilUtama.tambahMuatan();
-}
-
-void main() {
-  test();
 }

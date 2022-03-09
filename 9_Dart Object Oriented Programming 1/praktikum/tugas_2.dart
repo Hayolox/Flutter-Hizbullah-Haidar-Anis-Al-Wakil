@@ -1,72 +1,52 @@
-class hewan {
-  String nameAnimal;
-  int weightAnimal;
+import 'tugas_1.dart';
 
-  hewan.babi(this.nameAnimal, this.weightAnimal);
+class Hewan {
+  int berat;
+
+  Hewan.berat(this.berat);
 }
 
-class mobil {
-  var dataHewan = [];
-  int kapasitas;
+class Mobil {
+  double kapasistas;
+  List<Hewan> muatan;
 
-  mobil(this.dataHewan, this.kapasitas);
+  Mobil(this.kapasistas, this.muatan);
 
   void tambahMuatan() {
-    if (this.totalMuatan() < kapasitas) {
-      while (this.totalMuatan() < kapasitas) {
-        var addData = ['Kucing', 50];
-        var toString = addData[1].toString();
-        int newweightAnimal = int.parse(toString);
-        int total = this.totalMuatan() + newweightAnimal;
-        print('Menambahkan  data hewan ');
-        dataHewan.add(addData);
-        if (this.totalMuatan() > kapasitas) {
+    if (this.totalMuatan() < kapasistas) {
+      while (this.totalMuatan() < kapasistas) {
+        double total = 0;
+        var newAnimal = Hewan.berat(100);
+        muatan.add(newAnimal);
+        print('Tambah Data');
+        total = this.totalMuatan() + newAnimal.berat;
+        if (this.totalMuatan() > kapasistas) {
+          print(total);
           break;
         }
-        print(dataHewan);
-        print(total);
       }
     } else {
-      print('MUATAN PENUH!!!!');
-      print(
-          'total kapasitas mobil maksimal 1000 kg. total berat kapasitas sekarang ${this.totalMuatan()}');
+      print('Kapasistas penuh');
     }
   }
 
-  int totalMuatan() {
-    int total = 0;
-    for (var i in dataHewan) {
-      total = i[1] + total;
+  double totalMuatan() {
+    double totalMuatan = 0;
+    for (var i in muatan) {
+      totalMuatan = totalMuatan + i.berat;
     }
-    return total;
+    return totalMuatan;
   }
 }
 
-void test() {
-  var hewan1 = hewan.babi('ayam', 500);
-  var hewan2 = hewan.babi('babi', 300);
-  var hewan3 = hewan.babi('anjing', 300);
+void main(List<String> args) {
+  var hewan1 = Hewan.berat(100);
+  var hewan2 = Hewan.berat(200);
+  var hewan3 = Hewan.berat(300);
 
-  var mobilUtama = mobil([
-    [
-      hewan1.nameAnimal,
-      hewan1.weightAnimal,
-    ],
-    [
-      hewan2.nameAnimal,
-      hewan2.weightAnimal,
-    ],
-    [
-      hewan3.nameAnimal,
-      hewan3.weightAnimal,
-    ],
-  ], 1000);
+  var mobilUtama = Mobil(1000, [hewan1, hewan2, hewan3]);
 
   mobilUtama.tambahMuatan();
 
-  print('total muatan dari mobil ini adalah ${mobilUtama.totalMuatan()} KG');
-}
-
-void main() {
-  test();
+  print(mobilUtama.totalMuatan());
 }

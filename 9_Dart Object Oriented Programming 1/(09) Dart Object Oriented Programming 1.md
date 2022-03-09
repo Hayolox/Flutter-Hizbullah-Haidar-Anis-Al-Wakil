@@ -63,10 +63,10 @@ Berikut kode tugas kedua
 
 output:
 
-Mobil lebih dari kapasitas
+Mobil lebih kurang kapasitas
 ![Tugas1_Class_Mobil_Kurang_Dari_Kapasistas](./screenshots/Tugas1_Class_Mobil_Kurang_Dari_Kapasistas.jpeg)
 
-Mobil kurang  dari kapasitas
+Mobil lebih  dari kapasitas
 ![Tugas1_Class_Mobil_Lebih_Kapasitas](./screenshots/Tugas1_Class_Mobil_Lebih_Kapasitas.jpeg)
 
 ### 2. Tugas Kedua
@@ -78,4 +78,4 @@ Berikut kode tugas kedua.
 
 output:
 
-![Tugas2_Class_Mobil_Total_Muatan](./screenshots/Tugas2_Class_Mobil_Total_Muatan.jpeg )
+![Tugas2_Class_Mobil_Total_Muatan](./screenshots/Tugas2.jpeg )
