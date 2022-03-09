@@ -64,7 +64,7 @@ Berikut kode tugas kedua
 output:
 
 Mobil lebih kurang kapasitas
-![Tugas1_Class_Mobil_Kurang_Dari_Kapasistas](./screenshots/Tugas1_Class_Mobil_Kurang_Dari_Kapasistas.png.jpeg)
+![Tugas1_Class_Mobil_Kurang_Dari_Kapasistas](./screenshots/Tugas1_Class_Mobil_Kurang_Dari_Kapasistas.png)
 
 Mobil lebih  dari kapasitas
 ![Tugas1_Class_Mobil_Lebih_Kapasitas](./screenshots/Tugas1_Class_Mobil_Lebih_Kapasitas.png)
