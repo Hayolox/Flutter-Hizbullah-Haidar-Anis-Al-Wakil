@@ -6,10 +6,10 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.only(left: 20, top: 10),
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
+      margin: const EdgeInsets.only(left: 20, top: 10),
+      child: ListView(
+        children: [
+          Column(
             children: [
               Container(
                 padding: const EdgeInsets.only(left: 4),
@@ -738,6 +738,8 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        ],
+      ),
+    );
   }
 }

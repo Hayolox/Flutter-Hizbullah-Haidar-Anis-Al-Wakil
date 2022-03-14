@@ -30,6 +30,7 @@ class _MyAppState extends State<MyApp> {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   margin: const EdgeInsets.only(top: 10),
@@ -40,9 +41,6 @@ class _MyAppState extends State<MyApp> {
                       color: Colors.blue,
                     ),
                   ),
-                ),
-                const SizedBox(
-                  width: 130,
                 ),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
@@ -55,18 +53,20 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                 ),
-                const SizedBox(
-                  width: 140,
-                ),
                 Container(
-                    margin: const EdgeInsets.only(top: 10),
-                    child: const Icon(Icons.check_box_outline_blank)),
+                  margin: const EdgeInsets.only(top: 10),
+                  child: const Icon(
+                    Icons.create,
+                    color: Colors.blue,
+                  ),
+                ),
               ],
             ),
             const SizedBox(
               height: 13,
             ),
             CupertinoSearchTextField(
+              prefixInsets: const EdgeInsets.only(left: 150.0),
               onChanged: (String value) {
                 print('The text has changed to: $value');
               },
@@ -84,10 +84,10 @@ class _MyAppState extends State<MyApp> {
 
     Widget tabBar() {
       return Container(
-        margin: const EdgeInsets.only(left: 20),
-        padding: const EdgeInsets.only(bottom: 5),
+        padding: const EdgeInsets.only(bottom: 15),
         color: const Color(0xffF6F6F6),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             GestureDetector(
               onTap: () {
@@ -98,9 +98,6 @@ class _MyAppState extends State<MyApp> {
                 });
               },
               child: appBarContent('All chat', 0, activ),
-            ),
-            const SizedBox(
-              width: 41,
             ),
             GestureDetector(
               onTap: () {
@@ -113,17 +110,11 @@ class _MyAppState extends State<MyApp> {
               },
               child: appBarContent('work', 1, activ),
             ),
-            const SizedBox(
-              width: 41,
-            ),
             GestureDetector(
               onTap: () {
                 Currentindex = 2;
               },
               child: appBarContent('Unread', 9, true),
-            ),
-            const SizedBox(
-              width: 41,
             ),
             GestureDetector(
               onTap: () {
