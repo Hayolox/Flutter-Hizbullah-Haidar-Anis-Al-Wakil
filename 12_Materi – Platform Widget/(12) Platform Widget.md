@@ -5,6 +5,7 @@
 Dalam materi ini, mempelajari:
 1. MaterialApp
 2. Cupertino
+3. Scafold
 
 ### MaterialApp
 MaterialApp merupakan widget dasar yang mengemas dalam aplikas sistem android, untuk menggunakan widget ini maka harus  import ```package:flutter/material.dart';```. MaterialApp terdapat scafold yang berfungsi untuk membangun sebuah halaman yang dimana stuktur scafold terdiri dari appBar bagian menu atas halaman, drawer menu bagian samping halaman, body bagian utama halaman, bottomNavigationBar bagian bawah halaman.  
@@ -12,6 +13,8 @@ MaterialApp merupakan widget dasar yang mengemas dalam aplikas sistem android, u
 ### Cupertino
 Cupertino merupakan widget dasar yang mengemas dalam aplikas sistem iphone,  untuk menggunakan widget ini maka harus  import ```package:flutter/cupertino.dart';```. Sama seperti MaterialApp, Cupertino memiliki seperti scafold yang bernama CupertinoApp.
 
+### Scafold
+Scafold adalah widget untuk struktur dasar material design
 
 ## Task
 
