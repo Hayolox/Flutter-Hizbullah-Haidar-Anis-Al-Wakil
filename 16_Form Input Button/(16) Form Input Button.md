@@ -22,7 +22,7 @@ Button bersifat seperti tombol yang dapat melakukan saat di tekan, Button terdir
 ## Task
 
 ### Tugas pertama dan kedua
-Tugas pertama membaut halaman contack yang dimana menampilkan data nama dan nomor telpon. Dan untuk tugas kedua pada halaman contack ada tombol mengarahkan ke halaman baru yang diberi nama Create New Contack yang menampikan seuab form dan button
+Tugas pertama membuat halaman contack yang dimana menampilkan data nama dan nomor telpon. Dan untuk tugas kedua pada halaman contack ada tombol mengarahkan ke halaman baru yang diberi nama Create New Contack yang menampikan sebuah form dan button
 
 [main.dart](./praktikum/form/lib/main.dart)
 
