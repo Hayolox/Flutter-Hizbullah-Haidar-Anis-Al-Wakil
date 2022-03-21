@@ -30,8 +30,8 @@ class MyApp extends StatelessWidget {
                   itemCount: getApi.allUser.length,
                   itemBuilder: (context, index) {
                     return ContackWidget(
-                        name: getApi.allUser[index]['name'],
-                        phone: getApi.allUser[index]['phone']);
+                        name: getApi.allUser[index].name,
+                        phone: getApi.allUser[index].phone);
                   },
                 );
               }

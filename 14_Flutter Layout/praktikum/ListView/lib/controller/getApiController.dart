@@ -2,9 +2,10 @@ import 'dart:convert';
 
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
+import 'package:listview/model/userModel.dart';
 
 class GetApiController extends GetxController {
-  RxList allUser = [].obs;
+  List<UserModel> allUser = [];
 
   Future getAllUser() async {
     await Future.delayed(Duration(seconds: 3));
@@ -15,7 +16,7 @@ class GetApiController extends GetxController {
       );
       List data = json.decode(response.body);
       data.forEach((element) {
-        allUser.add(element);
+        allUser.add(UserModel.fromJson(element));
       });
     } catch (e) {
       /// Apabila error
