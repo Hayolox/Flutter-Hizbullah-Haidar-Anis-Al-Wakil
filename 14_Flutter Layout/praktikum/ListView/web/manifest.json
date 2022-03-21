@@ -1,6 +1,6 @@
 {
-    "name": "section15",
-    "short_name": "section15",
+    "name": "listview",
+    "short_name": "listview",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

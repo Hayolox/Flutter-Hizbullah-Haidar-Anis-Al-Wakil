@@ -1,68 +1,42 @@
 import 'package:flutter/material.dart';
-import 'package:section15/data.dart';
+import 'package:get/get.dart';
+import 'package:listview/controller/getApiController.dart';
+import 'package:listview/widgets/contack.dart';
+import 'package:listview/widgets/skeleton.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
+  final GetApiController getApi = Get.put(GetApiController());
+  int number = 1;
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
           appBar: AppBar(
-            title:
-                const Text('JSON ListView in Flutter || Hizbullah Haidar A A'),
+            title: const Text('Listview'),
+            centerTitle: true,
           ),
-          body: ListView.builder(
-              itemCount: getData.length,
-              itemBuilder: (context, index) => Container(
-                    margin: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 10),
-                    child: Row(
-                      children: [
-                        Container(
-                          width: 50,
-                          height: 50,
-                          decoration: BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              getData[index]['profile'],
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                              ),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              getData[index]['name'],
-                              style: const TextStyle(
-                                fontSize: 16,
-                              ),
-                            ),
-                            Text(
-                              getData[index]['number'],
-                              style: const TextStyle(
-                                color: Colors.grey,
-                              ),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ))),
-    );
+          body: FutureBuilder(
+            future: getApi.getAllUser(),
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return SkeletonWidget();
+              } else {
+                return ListView.builder(
+                  itemCount: getApi.allUser.length,
+                  itemBuilder: (context, index) {
+                    return ContackWidget(
+                        name: getApi.allUser[index]['name'],
+                        phone: getApi.allUser[index]['phone']);
+                  },
+                );
+              }
+            },
+          ),
+        ));
   }
 }
