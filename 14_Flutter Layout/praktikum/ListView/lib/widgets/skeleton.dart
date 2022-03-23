@@ -9,7 +9,7 @@ class SkeletonWidget extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.only(top: 10),
         child: ListView.builder(
-          itemCount: MyApp().getApi.allUser.length,
+          itemCount: 10,
           itemBuilder: (context, index) {
             return ListTile(
               leading: SkeletonAnimation(
