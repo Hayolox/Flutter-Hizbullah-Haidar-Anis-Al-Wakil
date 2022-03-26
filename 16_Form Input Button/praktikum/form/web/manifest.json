@@ -1,6 +1,6 @@
 {
-    "name": "section_16",
-    "short_name": "section_16",
+    "name": "section16",
+    "short_name": "section16",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
