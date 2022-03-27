@@ -8,6 +8,7 @@ import '../../contacts/controllers/contacts_controller.dart';
 
 class AddContactsView extends GetView<AddContactsController> {
   final ContactsController contactC = Get.find();
+  final GlobalKey<FormState> formGlobalKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,38 +18,45 @@ class AddContactsView extends GetView<AddContactsController> {
         ),
         body: Padding(
           padding: const EdgeInsets.all(20),
-          child: ListView(
-            children: [
-              TextField(
-                controller: controller.nameC,
-                autocorrect: false,
-                textInputAction: TextInputAction.next,
-                decoration: const InputDecoration(
-                  labelText: 'Name',
-                  border: OutlineInputBorder(),
+          child: Form(
+            key: formGlobalKey,
+            child: ListView(
+              children: [
+                TextFormField(
+                  controller: controller.nameC,
+                  validator: contactC.validationName,
+                  autocorrect: false,
+                  textInputAction: TextInputAction.next,
+                  decoration: const InputDecoration(
+                    labelText: 'Name',
+                    border: OutlineInputBorder(),
+                  ),
                 ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              TextField(
-                controller: controller.numberC,
-                autocorrect: false,
-                keyboardType: TextInputType.number,
-                textInputAction: TextInputAction.done,
-                decoration: const InputDecoration(
-                  labelText: 'Number',
-                  border: OutlineInputBorder(),
+                SizedBox(
+                  height: 10,
                 ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  contactC.addContact(
-                      controller.nameC.text, controller.numberC.text);
-                },
-                child: Text('submit'),
-              )
-            ],
+                TextFormField(
+                  controller: controller.numberC,
+                  validator: contactC.validateNumber,
+                  autocorrect: false,
+                  keyboardType: TextInputType.number,
+                  textInputAction: TextInputAction.done,
+                  decoration: const InputDecoration(
+                    labelText: 'Number',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    if (formGlobalKey.currentState!.validate()) {
+                      contactC.addContact(
+                          controller.nameC.text, controller.numberC.text);
+                    }
+                  },
+                  child: Text('submit'),
+                )
+              ],
+            ),
           ),
         ));
   }

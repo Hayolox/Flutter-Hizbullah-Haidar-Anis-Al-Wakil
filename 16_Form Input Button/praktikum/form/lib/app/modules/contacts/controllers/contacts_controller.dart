@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:section16/app/modules/add_contacts/controllers/add_contacts_controller.dart';
 
 class ContactsController extends GetxController {
+  final AddContactsController addC = Get.find();
   RxList<Map<String, dynamic>> allContacts = <Map<String, dynamic>>[
     {
       'name': 'akil',
@@ -14,24 +16,32 @@ class ContactsController extends GetxController {
   ].obs;
 
   void addContact(String name, String number) {
-    if (name != '' && number != '') {
-      allContacts.add({
-        'name': name,
-        'number': int.parse(number),
-      });
-      Get.snackbar(
-        'Sukses',
-        'Data berhasil ditambahkan',
-        duration: Duration(seconds: 2),
-      );
+    allContacts.add({
+      'name': name,
+      'number': int.parse(number),
+    });
+    Get.snackbar(
+      'Sukses',
+      'Data berhasil ditambahkan',
+      duration: Duration(seconds: 2),
+    );
+    addC.nameC.clear();
+    addC.numberC.clear();
+  }
+
+  String? validationName(name) {
+    if (name == '') {
+      return 'Name Required';
     } else {
-      Get.snackbar(
-        'Gagal',
-        'Name atau number tidak boleh kosong',
-        duration: Duration(seconds: 2),
-        backgroundColor: Colors.red,
-        margin: EdgeInsets.all(10),
-      );
+      return null;
+    }
+  }
+
+  String? validateNumber(number) {
+    if (number == '') {
+      return 'Number Required';
+    } else {
+      return null;
     }
   }
 }
