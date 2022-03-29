@@ -39,7 +39,9 @@ File picker berfungsi untuk mendapatkan penyimpanan yang ada di hp, untuk menggu
 ## Task
 
 ### Tugas pertama dan kedua
-![Soal](./gift/soal.jpegf)
+
+![Soal](./gift/soal.jpeg)
+
 
 
 [main.dart](./praktikum/section17/lib/main.dart)
