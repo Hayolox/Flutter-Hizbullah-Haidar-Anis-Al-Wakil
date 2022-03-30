@@ -8,17 +8,32 @@ class ContactsController extends GetxController {
     {
       'name': 'akil',
       'number': 62123,
+      'gender': 'Male',
+      'languages': {'Indenesia': true},
+      'country': 'Indonesia'
     },
     {
       'name': 'udin',
       'number': 62444,
+      'gender': 'Female',
+      'languages': {'Inggris': true},
+      'country': 'Thailand'
     },
   ].obs;
 
-  void addContact(String name, String number) {
+  void addContact(
+    String name,
+    String number,
+    String gender,
+    Map languages,
+    String country,
+  ) {
     allContacts.add({
       'name': name,
       'number': int.parse(number),
+      'gender': gender,
+      'languages': languages,
+      'country': country
     });
     Get.snackbar(
       'Sukses',
@@ -27,6 +42,8 @@ class ContactsController extends GetxController {
     );
     addC.nameC.clear();
     addC.numberC.clear();
+
+    print(allContacts);
   }
 
   String? validationName(name) {
@@ -40,6 +57,14 @@ class ContactsController extends GetxController {
   String? validateNumber(number) {
     if (number == '') {
       return 'Number Required';
+    } else {
+      return null;
+    }
+  }
+
+  String? validateChooseCountry(country) {
+    if (country == '') {
+      return 'Country Required';
     } else {
       return null;
     }

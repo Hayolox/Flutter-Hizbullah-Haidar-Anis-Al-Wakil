@@ -22,9 +22,29 @@ class ContactsView extends GetView<ContactsController> {
         body: Obx(() => ListView.builder(
               itemCount: controller.allContacts.length,
               itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text(controller.allContacts[index]['name']),
-                  subtitle: Text('${controller.allContacts[index]['number']}'),
+                return GestureDetector(
+                  onTap: () {
+                    Get.defaultDialog(
+                        title: 'Details',
+                        content: Column(
+                          children: [
+                            Text(
+                              'Gender :  ${controller.allContacts[index]['gender']}',
+                            ),
+                            Text(
+                              'languages :  ${controller.allContacts[index]['languages']}',
+                            ),
+                            Text(
+                              'Country :  ${controller.allContacts[index]['country']} ',
+                            ),
+                          ],
+                        ));
+                  },
+                  child: ListTile(
+                    title: Text(controller.allContacts[index]['name']),
+                    subtitle:
+                        Text('${controller.allContacts[index]['number']}'),
+                  ),
                 );
               },
             )));
