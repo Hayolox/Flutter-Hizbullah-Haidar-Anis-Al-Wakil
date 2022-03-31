@@ -24,7 +24,7 @@ Pertama install provider dengan flutter pub add provider pada terminal atau bisa
 
 
 
-[main.dart](./praktikum/flutter_statemanagement_provider/lib/main.dart)
+[main.dart](./praktikum/statemanagement_provider/lib/main.dart)
 
 output badges:
 
