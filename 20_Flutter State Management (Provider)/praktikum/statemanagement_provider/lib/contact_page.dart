@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_statemanagement/add_contact.dart';
-import 'package:flutter_statemanagement/stores/cantact.dart';
+import 'package:flutter_statemanagement/stores/contact.dart';
 import 'package:provider/provider.dart';
 
 class ContackPage extends StatelessWidget {
@@ -27,7 +27,7 @@ class ContackPage extends StatelessWidget {
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(
             builder: (context) {
-              return const AddContactPage();
+              return AddContactPage();
             },
           ));
         },

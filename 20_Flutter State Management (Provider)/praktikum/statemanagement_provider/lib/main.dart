@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_statemanagement/contact_page.dart';
-import 'package:flutter_statemanagement/stores/cantact.dart';
+import 'package:flutter_statemanagement/stores/contact.dart';
 import 'package:provider/provider.dart';
 
 void main() {
