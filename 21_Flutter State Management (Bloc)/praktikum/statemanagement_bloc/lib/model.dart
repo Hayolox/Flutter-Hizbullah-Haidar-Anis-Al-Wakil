@@ -5,3 +5,9 @@ class GetContact {
 
   GetContact({required this.name, required this.phoneNumber});
 }
+
+class GetHistory {
+  String name, phoneNumber;
+  DateTime now;
+  GetHistory(this.name, this.phoneNumber, this.now);
+}
