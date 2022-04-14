@@ -31,13 +31,11 @@ Untuk mengubah data json ke list atau map maka menggunakan deserialization decod
 
 [main.dart](./praktikum/task/lib/main.dart)
 
-output task 1:
+output :
 
-![Videos](./gift/output1.gif)
+![Videos](./gift/output.gif)
 
-output task 2:
 
-![Videos](./gift/output2.gif)
 
 
 
