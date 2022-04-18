@@ -27,33 +27,30 @@ class _FoodScreenState extends State<FoodScreen> {
           title: const Text('Food'),
           centerTitle: true,
         ),
-        body: body(context, viewModel));
-  }
-
-  Widget body(BuildContext context, FoodViewModel viewModel) {
-    final isLoading = viewModel.state == FoodViewState.loading;
-    final isError = viewModel.state == FoodViewState.error;
-    if (isLoading) {
-      return const Center(
-        child: Text('Loading.........'),
-      );
-    }
-
-    if (isError) {
-      return const Center(
-        child: Text('Error.........'),
-      );
-    }
-    return RefreshIndicator(
-      onRefresh: () => viewModel.getAllFoodApi(),
-      child: ListView.builder(
-        itemCount: viewModel.foods.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(viewModel.foods[index].name),
-          );
-        },
-      ),
-    );
+        body: Consumer<FoodViewModel>(
+          builder: (context, value, child) {
+            if (value.state == FoodViewState.loading) {
+              return const Center(
+                child: Text('Loading.........'),
+              );
+            }
+            if (value.state == FoodViewState.error) {
+              return const Center(
+                child: Text('Error.........'),
+              );
+            }
+            return RefreshIndicator(
+              onRefresh: () => viewModel.getAllFoodApi(),
+              child: ListView.builder(
+                itemCount: value.foods.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    title: Text(value.foods[index].name),
+                  );
+                },
+              ),
+            );
+          },
+        ));
   }
 }
