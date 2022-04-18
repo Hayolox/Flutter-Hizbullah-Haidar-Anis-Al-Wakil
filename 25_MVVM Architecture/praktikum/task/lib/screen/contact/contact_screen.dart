@@ -1,20 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_statemanagement/screen/contact/add_contact.dart';
-import 'package:flutter_statemanagement/screen/contact/contact_view_model.dart';
-import 'package:flutter_statemanagement/screen/history/history_screen.dart';
-import 'package:flutter_statemanagement/screen/history/history_view_model.dart';
 import 'package:provider/provider.dart';
+import 'package:task1/screen/contact/contact_add_screen.dart';
+import 'package:task1/screen/contact/contact_view_model.dart';
 import 'package:lottie/lottie.dart';
+import 'package:task1/screen/history/history_contact_screen.dart';
 
-class ContackScreen extends StatelessWidget {
-  ContackScreen({Key? key}) : super(key: key);
+class ContactScreen extends StatefulWidget {
+  const ContactScreen({Key? key}) : super(key: key);
+
+  @override
+  State<ContactScreen> createState() => _FoodScreenState();
+}
+
+class _FoodScreenState extends State<ContactScreen> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) async {
+      var viewModel = Provider.of<ContactViewModel>(context, listen: false);
+      await viewModel.getAllContactApi();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    final historyP = Provider.of<HistoryViewModel>(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Contacts'),
+        title: const Text('Contact'),
         centerTitle: true,
         actions: [
           Container(
@@ -23,7 +35,7 @@ class ContackScreen extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) {
-                    return const HistoryScreen();
+                    return const HistoryContactScreen();
                   },
                 ));
               },
@@ -32,42 +44,56 @@ class ContackScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Consumer<ContactViewModel>(builder: (context, provider, child) {
-        return FutureBuilder(
-          future: provider.getContacts(),
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return Center(
-                child: Lottie.asset('assets/lottie/loading.json', width: 100),
-              );
-            } else {
-              return ListView.builder(
-                  itemCount: 3,
-                  itemBuilder: (context, index) {
-                    return ListTile(
-                        title: Text(provider.contacts[index].name),
-                        subtitle: Text(provider.contacts[index].phone),
-                        trailing: GestureDetector(
-                          onTap: () {
-                            historyP.add(provider.contacts[index].name,
-                                provider.contacts[index].phone, DateTime.now());
-                          },
-                          child: const Icon(Icons.phone),
-                        ));
-                  });
-            }
-          },
-        );
-      }),
+      body: Consumer<ContactViewModel>(
+        builder: (context, value, child) {
+          if (value.state == ContactViewState.loading) {
+            return Center(
+              child: Lottie.network(
+                  'https://assets5.lottiefiles.com/packages/lf20_os9bpC.json',
+                  width: 200),
+            );
+          }
+
+          if (value.state == ContactViewState.error) {
+            return Center(
+              child: Lottie.network(
+                  'https://assets8.lottiefiles.com/packages/lf20_pNx6yH.json',
+                  width: 200),
+            );
+          }
+
+          return RefreshIndicator(
+            onRefresh: () => value.getAllContactApi(),
+            child: ListView.builder(
+              itemCount: value.contacts.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                    title: Text(value.contacts[index].name),
+                    subtitle: Text(value.contacts[index].phone),
+                    trailing: GestureDetector(
+                      onTap: () {
+                        value.addHistory(
+                          value.contacts[index].name,
+                          value.contacts[index].phone,
+                          DateTime.now(),
+                        );
+                      },
+                      child: const Icon(Icons.phone),
+                    ));
+              },
+            ),
+          );
+        },
+      ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
+        onPressed: (() {
           Navigator.of(context).push(MaterialPageRoute(
             builder: (context) {
-              return const AddContactPage();
+              return ContactAddScreen();
             },
           ));
-        },
-        child: const Icon(Icons.add),
+        }),
+        child: Icon(Icons.add),
       ),
     );
   }

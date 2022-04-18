@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_statemanagement/model/contact_model.dart';
-import 'package:flutter_statemanagement/screen/contact/contact_view_model.dart';
-import 'package:provider/provider.dart';
 
-class AddContactPage extends StatelessWidget {
-  const AddContactPage({Key? key}) : super(key: key);
+import 'package:provider/provider.dart';
+import 'package:task1/screen/contact/contact_view_model.dart';
+
+class ContactAddScreen extends StatelessWidget {
+  const ContactAddScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -81,8 +81,8 @@ class AddContactPage extends StatelessWidget {
                         contactP.numberController.text,
                         context);
                     if (kondisi == 'success') {
-                      contactP.add(contactP.nameController.text,
-                          contactP.nameController.text, context);
+                      contactP.addContact(contactP.nameController.text,
+                          contactP.numberController.text, context);
                     }
                   },
                   child: const Text('Add Contact'),

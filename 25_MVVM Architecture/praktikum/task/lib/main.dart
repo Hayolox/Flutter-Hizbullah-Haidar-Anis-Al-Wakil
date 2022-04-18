@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_statemanagement/screen/contact/contact_screen.dart';
-import 'package:flutter_statemanagement/screen/contact/contact_view_model.dart';
-import 'package:flutter_statemanagement/screen/history/history_view_model.dart';
 import 'package:provider/provider.dart';
+import 'package:task1/screen/contact/contact_screen.dart';
+import 'package:task1/screen/contact/contact_view_model.dart';
 
-void main() {
+void main() async {
   runApp(MultiProvider(
     providers: [
-      ChangeNotifierProvider(
+      ChangeNotifierProvider<ContactViewModel>(
         create: (_) => ContactViewModel(),
-      ),
-      ChangeNotifierProvider(
-        create: (_) => HistoryViewModel(),
       )
     ],
     child: const MyApp(),
@@ -23,10 +19,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter State Management',
-      home: ContackScreen(),
+      home: ContactScreen(),
     );
   }
 }

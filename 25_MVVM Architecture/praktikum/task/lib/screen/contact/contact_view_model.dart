@@ -1,34 +1,63 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_statemanagement/model/contact_model.dart';
-import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter_statemanagement/model/api/contact_api.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:task1/model/api/contact_api.dart';
+import 'package:task1/model/contact_model.dart';
+import 'package:awesome_dialog/awesome_dialog.dart';
+import 'package:task1/model/history_model.dart';
 
-class ContactViewModel with ChangeNotifier {
+enum ContactViewState {
+  none,
+  loading,
+  error,
+}
+
+class ContactViewModel extends ChangeNotifier {
+  ContactViewState _state = ContactViewState.loading;
+  ContactViewState get state => _state;
+
   List<ContactModel> _contacts = [];
   List<ContactModel> get contacts => _contacts;
+
+  List<HistoryModel> _historyContacts = [];
+  List<HistoryModel> get historyContacts => _historyContacts;
+
   TextEditingController nameController = TextEditingController();
   TextEditingController numberController = TextEditingController();
 
-  Future<void> getContacts() async {
+  changeState(ContactViewState s) {
+    _state = s;
+    notifyListeners();
+  }
+
+  getAllContactApi() async {
+    changeState(ContactViewState.loading);
+
     try {
-      List<ContactModel> dataContacts = await ContactApi().getApiContact();
-      _contacts = dataContacts;
+      List<ContactModel> _getContactApi = await ContactApi().getContactApi();
+      _contacts = _getContactApi;
+      notifyListeners();
+      changeState(ContactViewState.none);
     } catch (e) {
-      //  error
+      changeState(ContactViewState.error);
     }
   }
 
-  void add(String paramName, String paramPhone, BuildContext context) async {
-    var response = await Dio().post(
-        'https://my-json-server.typicode.com/hadihammurabi/flutter-webservice/contacts/',
-        data: {"name": paramName, "phone": paramPhone});
-    print(response.data);
+  void addContact(
+      String paramName, String paramPhone, BuildContext context) async {
+    final response = await ContactApi().addContactApi(paramName, paramPhone);
+    print(response);
+    _contacts.add((ContactModel.fromJson(response)));
     notifyListeners();
     nameController.clear();
     numberController.clear();
     seeDialog('Contact Berhasil Ditambahkan', DialogType.SUCCES, context);
+  }
+
+  void addHistory(
+      String paramName, String paramPhone, DateTime paramNow) async {
+    _historyContacts
+        .add(HistoryModel(name: paramName, phone: paramPhone, now: paramNow));
+    notifyListeners();
   }
 
   Object validation(String name, String number, BuildContext context) {
